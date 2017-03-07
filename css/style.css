@@ -8,6 +8,7 @@
 	width: 100vw;
 	top: 0;
 	background: #FFF;
+	z-index: 1;
 }
 
 .logo-text {
@@ -31,10 +32,44 @@ nav {
     background-attachment: fixed;
     margin-top: 70px;
     width: 100vw;
+    position: relative;
+}
+
+.intro-text-container {
+	position: absolute;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    color: #FFF;
+}
+
+.heading-text {
+	font-size: 90px;
+}
+
+.intro-description {
+	font-size: 20px;
 }
 
 /*Introduction style ends*/
 
+/*Media query starts*/
+@media screen and (max-width: 420px) {
+	.logo-text {
+		font-size: 40px;
+	}
+
+	.intro {
+		margin-top: 200px;
+	}
+
+	.heading-text {
+		font-size: 50px;
+	}
+}
+
+/*Media query ends*/
+
 .dummy {
-	height: 1000px;
+	height: 3000px;
 }
