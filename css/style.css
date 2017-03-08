@@ -53,31 +53,35 @@ nav {
 
 /*Introduction style ends*/
 
-/*About style starts*/
+/*General section properties*/
 
-.about-container {
+.section-container {
 	text-align: center;
 	padding-top: 20px;
 	width: 100vw;
 }
 
-.about-container .row {
-	/*width: 100vw;*/
-}
-
-.about-heading {
+.section-heading {
 	font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.about-container hr {
+.section-container hr {
 	border-color: #FFA000;
 }
 
-.about-container p {
+.section-container p {
 	font-size: 18px;
     color: #616161;
+}
+
+/*General section properties ends*/
+
+/*About style starts*/
+
+.about-container .row {
+	/*width: 100vw;*/
 }
 
 .about-container img {
