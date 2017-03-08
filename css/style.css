@@ -53,6 +53,40 @@ nav {
 
 /*Introduction style ends*/
 
+/*About style starts*/
+
+.about-container {
+	text-align: center;
+	padding-top: 20px;
+	width: 100vw;
+}
+
+.about-container .row {
+	/*width: 100vw;*/
+}
+
+.about-heading {
+	font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.about-container hr {
+	border-color: #FFA000;
+}
+
+.about-container p {
+	font-size: 18px;
+    color: #616161;
+}
+
+.about-container img {
+	padding-bottom: 30px;
+	width: 100%;
+}
+
+/*About style ends*/
+
 /*Media query starts*/
 @media screen and (max-width: 420px) {
 	.logo-text {
