@@ -11,6 +11,12 @@
 		<!-- My custom stylesheet -->
 		<link rel="stylesheet" href="css/style.css">
 
+		<!-- Jquery file -->
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  		crossorigin="anonymous"></script>
+
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
 	</head>
@@ -18,7 +24,7 @@
 
 		<!-- HEADER STARTS HERE -->
 
-		<header class="row header-container">
+		<header class="col-md-12 header-container">
 			<div class="col-md-3 col-xs-12 logo-text"><a href="#">CREATIVE TIM</a></div>
 			<nav class="col-md-9 col-xs-12">
 				<div class="col-md-1 col-xs-12"><a href="#about-container">About</a></div>
@@ -97,6 +103,9 @@
 					<div class="row"><img></div>
 					<div class="row">Create UI Tools</div>
 					<div class="row"><p>We have created the tools that will help you in your next design project. From plugins to complex kits, we've got you covered in all areas regarding front-end development.</p></div>
+					<div class="row">
+						<button>Know more</button>
+					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="row"></div>
@@ -113,6 +122,56 @@
 
 		<!-- What we do ends here -->
 
+		<!-- What people think starts here -->
+
+		<section class="row section-container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 section-heading">What people think</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-2"><hr></div>
+			</div>
+			<div class="col-md-6 col-md-offset-3 testimonial-container">
+				<p id="p-ed">"Hey Creative-Tim team. Absolutely love your work! It's a God-send for a developer like me who doesn't know his ass from great design! Keep up the awesome work! Ed"</p>
+
+				<p class="p-hide" id="p-ab">"Hello there, My Name is Abhi Khatri. You're simply awesome. I would love to contact you. I'm a new front-end developer but everytime I checkout your stuff it gives me idea to make my own stuff. Keep it up :)"</p>
+
+				<p class="p-hide" id="p-fe">"Finding a website with a vast purpose is always inspiring to continue front web development. But you did Magic my friends. Keep going and be sure if there is a donation, I'm in. Thanks for your daily hardworking. hope to meet u guys one day"</p>
+
+				<p class="p-hide" id="p-ko">"Hi, your site and all the stuff on it looks simply awesome, thank's for sharing. Love this. Greetings from Germany!"</p>
+			</div>
+			<div class="col-md-4 col-md-offset-4">
+				<div class="col-md-3" id="edwin">EDWIN REDE</div>
+				<div class="col-md-3" id="abhi">ABHI KHATRI</div>
+				<div class="col-md-3" id="fears">FARS KID</div>
+				<div class="col-md-3" id="kolo">KOLODZIEJ NIKOLAI</div>
+			</div>
+		</section>
+
+		<!-- What people think ends here -->
+
 		<div class="dummy"></div>
+		<script>
+
+			$('#edwin').click(function() {
+				$('.testimonial-container p').hide();
+				$('#p-ed').show();
+			});
+
+			$('#abhi').click(function() {
+				$('.testimonial-container p').hide();
+				$('#p-ab').show();
+			});
+
+			$('#fears').click(function() {
+				$('.testimonial-container p').hide();
+				$('#p-fe').show();
+			});
+
+			$('#kolo').click(function() {
+				$('.testimonial-container p').hide();
+				$('#p-ko').show();
+			});
+		</script>
 	</body>
 </html>
